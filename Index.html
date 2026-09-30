@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numpit - Jasa Titip Kampus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Numpit.</h1>
+    <p>Solusi Jasa Titip & Suruhan Mikro Area Kampus</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Pilih Layanan</h2>
+      <select id="layanan">
+        <option value="5000">Titip Makanan / Jajanan (Rp 5.000)</option>
+        <option value="3000">Print & Antar Dokumen (Rp 3.000)</option>
+        <option value="6000">Titip Belanja Minimarket (Rp 6.000)</option>
+        <option value="4000">Ambil Paket di Pos/Expedisi (Rp 4.000)</option>
+      </select>
+
+      <h2>Detail Pesanan</h2>
+      <input type="text" id="nama" placeholder="Nama Kamu">
+      <input type="text" id="lokasi" placeholder="Lokasi Pengiriman (contoh: Gedung F Kampus / Kos A)">
+      <textarea id="catatan" placeholder="Detail barang/pesanan (contoh: Ayam Geprek Sambal Hijau Level 2)"></textarea>
+
+      <button id="btnOrder">Pesan via WhatsApp</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
