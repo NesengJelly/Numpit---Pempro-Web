@@ -1,60 +1,178 @@
+/* Reset Dasar */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background-color: #f4f6f8;
+  background-color: #f5f5f5; /* Abu-abu muda */
   color: #333;
 }
 
-header {
-  background-color: #007bff;
-  color: white;
+/* Header Logo Baru (Putih) */
+.logo-header {
+  background-color: white;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 20px 0;
 }
 
+.logo-text {
+  font-size: 3rem;
+  color: #87ceeb; /* Biru muda */
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Navigasi Utama Baru (Putih dengan Garis Bawah Abu-abu) */
+.main-nav {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #777; /* Abu-abu */
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  color: #333;
+}
+
+.main-nav .active a {
+  color: #333;
+  border-bottom: 2px solid #333; /* Garis bawah aktif */
+}
+
+/* Hero Section Baru (Abu-abu) */
+.hero {
+  background-color: #e0e0e0; /* Abu-abu sedikit lebih gelap */
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4rem;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-slogan {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #333; /* Tombol gelap (hitam/abu-abu tua) */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.hero-btn:hover {
+  background-color: #555;
+}
+
+/* Kontainer Utama (Formulir Pindahan ke Bawah) */
 .container {
-  max-width: 500px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 15px;
 }
 
-.card {
-  background: white;
-  padding: 1.5rem;
+.order-form-card {
+  background-color: white;
+  padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Bayangan halus */
 }
 
 h2 {
   font-size: 1.1rem;
-  margin: 1rem 0 0.5rem 0;
+  margin: 20px 0 10px 0;
+  color: #555;
+}
+
+.input-group {
+  margin-bottom: 15px;
 }
 
 select, input, textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-button {
-  width: 100%;
   padding: 12px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  background-color: white;
 }
 
-button:hover {
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Tambahkan ikon kustom untuk dropdown jika diperlukan */
+}
+
+/* Tombol WhatsApp (Dipertahankan di Formulir) */
+#btnOrder {
+  display: block;
+  width: 100%;
+  background-color: #28a745; /* Tombol hijau WhatsApp */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+#btnOrder:hover {
   background-color: #218838;
+}
+
+/* Footer Baru (Biru Tua) */
+.main-footer {
+  background-color: #3f51b5; /* Biru tua */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+.main-footer p {
+  font-size: 0.8rem;
+  font-weight: 300;
 }

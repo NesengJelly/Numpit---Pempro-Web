@@ -3,34 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Numpit - Jasa Titip Kampus</title>
+  <title>Numpit - Asisten Jasa Titip Kampus</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Menambahkan Font yang lebih modern -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>Numpit.</h1>
-    <p>Solusi Jasa Titip & Suruhan Mikro Area Kampus</p>
+  <!-- Header Logo (Seperti Referensi) -->
+  <header class="logo-header">
+    <h1 class="logo-text">NUMPIT</h1>
   </header>
 
-  <main class="container">
-    <section class="card">
+  <!-- Navigasi Utama (Seperti Referensi) -->
+  <nav class="main-nav">
+    <ul>
+      <li class="active"><a href="#home">HOME</a></li>
+      <li><a href="#layanan-form">LAYANAN</a></li>
+      <li><a href="#tentang">TENTANG KAMI</a></li>
+      <li><a href="#kontak">KONTAK</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section (Seperti Referensi) -->
+  <div class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title">NUMPIT</h1>
+      <p class="hero-slogan">"Personal Assistant For Campus Needs"</p>
+      <a href="#layanan-form" class="hero-btn">LIHAT LAYANAN</a>
+    </div>
+  </div>
+
+  <!-- Area Konten Utama (Formulir Pemesanan) -->
+  <main class="container" id="layanan-form">
+    <section class="order-form-card">
       <h2>Pilih Layanan</h2>
-      <select id="layanan">
-        <option value="5000">Titip Makanan / Jajanan (Rp 5.000)</option>
-        <option value="3000">Print & Antar Dokumen (Rp 3.000)</option>
-        <option value="6000">Titip Belanja Minimarket (Rp 6.000)</option>
-        <option value="4000">Ambil Paket di Pos/Expedisi (Rp 4.000)</option>
-      </select>
+      <div class="input-group">
+        <select id="layanan">
+          <option value="Makanan">Titip Makanan / Jajanan (Rp 5.000)</option>
+          <option value="Print">Print & Antar Dokumen (Rp 3.000)</option>
+          <option value="Belanja">Titip Belanja Minimarket (Rp 6.000)</option>
+          <option value="Paket">Ambil Paket di Pos/Ekspedisi (Rp 4.000)</option>
+        </select>
+      </div>
 
       <h2>Detail Pesanan</h2>
-      <input type="text" id="nama" placeholder="Nama Kamu">
-      <input type="text" id="lokasi" placeholder="Lokasi Pengiriman (contoh: Gedung F Kampus / Kos A)">
-      <textarea id="catatan" placeholder="Detail barang/pesanan (contoh: Ayam Geprek Sambal Hijau Level 2)"></textarea>
+      <div class="input-group">
+        <input type="text" id="nama" placeholder="Nama Kamu">
+      </div>
+      <div class="input-group">
+        <input type="text" id="lokasi" placeholder="Lokasi Pengiriman (contoh: Gedung F Kampus / Kos A)">
+      </div>
+      <div class="input-group">
+        <textarea id="catatan" placeholder="Detail barang/pesanan (contoh: Ayam Geprek Sambal Hijau Level 2)"></textarea>
+      </div>
 
       <button id="btnOrder">Pesan via WhatsApp</button>
     </section>
   </main>
+
+  <!-- Footer (Biru) -->
+  <footer class="main-footer">
+    <p>© 2024 Numpit Kampus. Melayani area Malang.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
